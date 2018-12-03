@@ -46,7 +46,7 @@ mongodb.MongoClient.connect(mongoUrl, function (err, database) {
     // Movies = db.collection('movies')
     console.log("Database connection ready");
 
-    var server = app.listen(PORT, function () {
+    var server = app.listen(process.env.PORT || PORT, function () {
         console.log("App now running on port", PORT);
     });
 
