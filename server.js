@@ -96,6 +96,7 @@ app.post('/addMovie', upload.single('photo'), (req, res) => {
           console.log(result)
         }
     });
+    res.redirect("https://movies-final-f5227.firebaseapp.com")
 })
 
 app.post('/addPhoto', upload.single('photo'), (req, res) => {
